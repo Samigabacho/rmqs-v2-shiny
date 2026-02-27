@@ -1,0 +1,18 @@
+﻿item,short_label,domain
+item1,Pre-reg,Design
+item2,Rand (P),Design
+item3,Rand (G),Design
+item4,Blind (P),Implementation
+item5,Blind (T),Implementation
+item6,Blind (A),Implementation
+item7,Equal SES,Design
+item8,Pretest,Measurement
+item9,Balanced,Design
+item10,Fidelity,Implementation
+item11,Active C,Design
+item12,Replicate I,Transparency
+item13,Replicate DV,Transparency
+item14,Reliability,Measurement
+item15,Validity,Measurement
+item16,Key compare,Analysis
+item17,Open data,Transparency

@@ -1,0 +1,16 @@
+.Rhistory
+.Rprofile
+.RData
+desktop.ini
+renv/
+release/
+veriones/
+docs/
+*_effective.csv
+*_template.csv
+sessionInfo_step0.txt
+Data_*.xlsx
+.Rproj.user/
+www/templates/
+app_prepatch_*.R
+www/
