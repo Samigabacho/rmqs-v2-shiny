@@ -1,0 +1,11 @@
+app_name: "Revised Methodological Quality Scale (RMQS) Shiny App"
+version: "0.1.0"
+authors: ["Samuel P. León"]
+affiliation: "University of Jaén (MIDE) 
+preprint_url: "https://…"
+osf_url: "https://…"
+github_url: "https://…"
+how_to_cite_apa: "León, S. P.(2026). RMQS Shiny App (Version 0.1.0). Preprint. EdArXiv. https://…"
+license: "CC BY 4.0"
+contact: "https://www4.ujaen.es/~sparra/"
+note: "Please verify coding decisions using the codebook and decision rules."
