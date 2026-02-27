@@ -4,7 +4,7 @@
 desktop.ini
 renv/
 release/
-veriones/
+versiones/
 docs/
 *_effective.csv
 *_template.csv
@@ -13,4 +13,4 @@ Data_*.xlsx
 .Rproj.user/
 www/templates/
 app_prepatch_*.R
-www/
+dev/
