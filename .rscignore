@@ -2,9 +2,13 @@ dev/
 release/
 renv/
 .Rproj.user/
-docs/
-Data_*.xlsx
-*_effective.csv
-*_template.csv
+.Rhistory
+.RData
+.Rprofile
 desktop.ini
+
 www/templates/
+www/desktop.ini
+www/about.yml
+
+rsconnect/

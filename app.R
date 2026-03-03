@@ -18,6 +18,7 @@ library(stringr)
 library(DT)
 library(munsell)
 library(ggplot2)
+library(rsconnect)
 
 # ---------------------------
 # Small utilities
@@ -1429,33 +1430,83 @@ server <- function(input, output, session) {
   # ---------------------------
   output$about_ui <- renderUI({
     lang <- input$lang %||% "es"
+    
     if (identical(lang, "en")) {
+      
       tagList(
         tags$h3("About / Cite"),
-        tags$p("RMQS Shiny App (demo). This app supports coding and summarizing a revised methodological quality scale."),
+        
+        tags$p("The Revised Methodological Quality Scale (RMQS) v2.0 is a metascientific framework designed to support transparent, operational, and reproducible methodological quality assessment in educational and psychological research."),
+        
         tags$ul(
-          tags$li(tags$b("Name:"), " Revised Methodological Quality Scale (RMQS) Shiny App"),
-          tags$li(tags$b("Preprint:"), " (to be added: EdArXiv link)"),
-          tags$li(tags$b("OSF project:"), " (to be added: OSF link)"),
-          tags$li(tags$b("Codebook:"), " available via the repository / configuration files")
+          tags$li(tags$b("Live application: "),
+                  tags$a("https://samigabacho.shinyapps.io/rmqs-v2-shiny/",
+                         href="https://samigabacho.shinyapps.io/rmqs-v2-shiny/",
+                         target="_blank")),
+          
+          tags$li(tags$b("Source code (GitHub): "),
+                  tags$a("https://github.com/Samigabacho/rmqs-v2-shiny",
+                         href="https://github.com/Samigabacho/rmqs-v2-shiny",
+                         target="_blank")),
+          
+          tags$li(tags$b("Concept DOI (recommended citation): "),
+                  tags$a("https://doi.org/10.5281/zenodo.18851550",
+                         href="https://doi.org/10.5281/zenodo.18851550",
+                         target="_blank")),
+          
+          tags$li(tags$b("Version DOI (v2.0.1): "),
+                  tags$a("https://doi.org/10.5281/zenodo.18851551",
+                         href="https://doi.org/10.5281/zenodo.18851551",
+                         target="_blank"))
         ),
+        
         tags$hr(),
-        tags$h4("Suggested citation (placeholder)"),
-        tags$pre("León, S.P. (2026). RMQS Shiny App (Version 0.1). [Software]. Preprint/OSF link.")
+        tags$h4("Recommended citation (APA 7)"),
+        tags$pre(
+          "Parra León, S. P. (2026). Revised Methodological Quality Scale (RMQS) (Version 2.x) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18851550"
+        ),
+        
+        tags$hr(),
+        tags$p("All versions of the software are permanently archived via Zenodo. Each GitHub release automatically generates a citable DOI, ensuring long-term accessibility and reproducibility.")
       )
+      
     } else {
+      
       tagList(
         tags$h3("Acerca de / Citar"),
-        tags$p("RMQS Shiny App (demo). Esta app permite codificar y resumir una escala revisada de calidad metodológica."),
+        
+        tags$p("La Revised Methodological Quality Scale (RMQS) v2.0 es un marco metacientífico diseñado para apoyar evaluaciones de calidad metodológica de forma transparente, operativa y reproducible en investigación educativa y psicológica."),
+        
         tags$ul(
-          tags$li(tags$b("Nombre:"), " Revised Methodological Quality Scale (RMQS) Shiny App"),
-          tags$li(tags$b("Preprint:"), " (pendiente: enlace EdArXiv)"),
-          tags$li(tags$b("Proyecto OSF:"), " (pendiente: enlace OSF)"),
-          tags$li(tags$b("Codebook:"), " disponible en el repositorio / ficheros de configuración")
+          tags$li(tags$b("Aplicación en línea: "),
+                  tags$a("https://samigabacho.shinyapps.io/rmqs-v2-shiny/",
+                         href="https://samigabacho.shinyapps.io/rmqs-v2-shiny/",
+                         target="_blank")),
+          
+          tags$li(tags$b("Código fuente (GitHub): "),
+                  tags$a("https://github.com/Samigabacho/rmqs-v2-shiny",
+                         href="https://github.com/Samigabacho/rmqs-v2-shiny",
+                         target="_blank")),
+          
+          tags$li(tags$b("DOI conceptual (cita recomendada): "),
+                  tags$a("https://doi.org/10.5281/zenodo.18851550",
+                         href="https://doi.org/10.5281/zenodo.18851550",
+                         target="_blank")),
+          
+          tags$li(tags$b("DOI de versión (v2.0.1): "),
+                  tags$a("https://doi.org/10.5281/zenodo.18851551",
+                         href="https://doi.org/10.5281/zenodo.18851551",
+                         target="_blank"))
         ),
+        
         tags$hr(),
-        tags$h4("Cita sugerida (placeholder)"),
-        tags$pre("León, S.P. (2026). RMQS Shiny App (Version 0.1). [Software]. Enlace preprint/OSF.")
+        tags$h4("Cita recomendada (APA 7)"),
+        tags$pre(
+          "Parra León, S. P. (2026). Revised Methodological Quality Scale (RMQS) (Version 2.x) [Software]. Zenodo. https://doi.org/10.5281/zenodo.18851550"
+        ),
+        
+        tags$hr(),
+        tags$p("Todas las versiones del software están archivadas permanentemente en Zenodo. Cada release en GitHub genera automáticamente un DOI citable, garantizando accesibilidad y reproducibilidad a largo plazo.")
       )
     }
   })
