@@ -65,7 +65,7 @@ https://doi.org/10.5281/zenodo.18851551
 
 ### Recommended citation (APA 7)
 
-Parra León, S. P. (2026). *Revised Methodological Quality Scale (RMQS)* (Version 2.x) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18851550
+León, S. P. (2026). *Revised Methodological Quality Scale (RMQS)* (Version 2.x) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18851550
 
 ---
 
