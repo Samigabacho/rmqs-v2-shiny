@@ -1,0 +1,10 @@
+dev/
+release/
+renv/
+.Rproj.user/
+docs/
+Data_*.xlsx
+*_effective.csv
+*_template.csv
+desktop.ini
+www/templates/

@@ -14,3 +14,4 @@ Data_*.xlsx
 www/templates/
 app_prepatch_*.R
 dev/
+rsconnect/
