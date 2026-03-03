@@ -1463,7 +1463,7 @@ server <- function(input, output, session) {
         tags$hr(),
         tags$h4("Recommended citation (APA 7)"),
         tags$pre(
-          "Parra León, S. P. (2026). Revised Methodological Quality Scale (RMQS) (Version 2.x) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18851550"
+          "León, S. P. (2026). Revised Methodological Quality Scale (RMQS) (Version 2.x) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.18851550"
         ),
         
         tags$hr(),
